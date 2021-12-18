@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MogersToDoList</string>
+    <string name="add_new_todo">Add New ToDo</string>
+</resources>

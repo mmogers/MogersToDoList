@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditTaskActivity"
+    android:orientation="vertical">
+
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textID"
+            android:text="---"
+            android:height="20pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkBoxPriority"
+            android:text="Priority"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text="Due Date"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/editDueDate" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:text="Task:"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTask"
+            android:height="40pt"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/checkBoxDone"
+            android:text="Completed"
+            android:layout_height="wrap_content"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonAddTask"
+            android:layout_height="wrap_content"
+            android:onClick="handleClick"
+            android:text="Add Task"
+            android:textColor="@color/black" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonEditTask"
+            android:onClick="handleClick"
+            android:layout_height="wrap_content"
+            android:text="Edit Task"
+            android:textColor="@color/black"/>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonDeleteTask"
+            android:layout_height="wrap_content"
+            android:onClick="handleClick"
+            android:text="Delete Task"
+            android:textColor="@color/black" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonMainMenu"
+            android:layout_height="match_parent"
+            android:onClick="handleClick"
+            android:text="Menu"
+            android:textColor="@color/black" />
+    </TableRow>
+</LinearLayout>
